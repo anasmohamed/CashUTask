@@ -1,0 +1,6 @@
+framework module Pods_CashUTask {
+  umbrella header "Pods-CashUTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047700323F7C4FF1591F9663 /* Pods_CashUTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2019697E5ED281E06999A4A6 /* Pods_CashUTask.framework */; };
+		70C43D9BD60160A34287C478 /* Pods_CashUTask_CashUTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9EFEBF546C1954352D9C6E /* Pods_CashUTask_CashUTaskUITests.framework */; };
+		A8816CF3253F792D00AA2685 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8816CF2253F792D00AA2685 /* ServiceConstants.swift */; };
+		A8816CF6253F7C2500AA2685 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8816CF5253F7C2500AA2685 /* ProductListViewModel.swift */; };
+		A8816CF8253F854100AA2685 /* ProductListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8816CF7253F854100AA2685 /* ProductListCellViewModel.swift */; };
 		A8F0673D253E1BCC00923C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0673C253E1BCC00923C77 /* AppDelegate.swift */; };
 		A8F0673F253E1BCC00923C77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0673E253E1BCC00923C77 /* SceneDelegate.swift */; };
-		A8F06741253E1BCC00923C77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F06740253E1BCC00923C77 /* ViewController.swift */; };
+		A8F06741253E1BCC00923C77 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F06740253E1BCC00923C77 /* ProductsListViewController.swift */; };
 		A8F06744253E1BCC00923C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F06742253E1BCC00923C77 /* Main.storyboard */; };
 		A8F06746253E1BD000923C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F06745253E1BD000923C77 /* Assets.xcassets */; };
 		A8F06749253E1BD000923C77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F06747253E1BD000923C77 /* LaunchScreen.storyboard */; };
 		A8F06754253E1BD000923C77 /* CashUTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F06753253E1BD000923C77 /* CashUTaskTests.swift */; };
 		A8F0675F253E1BD000923C77 /* CashUTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0675E253E1BD000923C77 /* CashUTaskUITests.swift */; };
+		A8F0676E253E237400923C77 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0676D253E237400923C77 /* ProductListTableViewCell.swift */; };
+		A8F06772253E256D00923C77 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F06771253E256D00923C77 /* Product.swift */; };
+		A8F06775253E28EA00923C77 /* ProductWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F06774253E28EA00923C77 /* ProductWebService.swift */; };
+		AB601EB728F65E1A2583D38A /* Pods_CashUTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB8D3A562676FB0245E439B /* Pods_CashUTaskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2019697E5ED281E06999A4A6 /* Pods_CashUTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashUTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADA1E86712F07F8751D7170 /* Pods-CashUTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashUTask.debug.xcconfig"; path = "Target Support Files/Pods-CashUTask/Pods-CashUTask.debug.xcconfig"; sourceTree = "<group>"; };
+		6F832C6A34B2B9D638524FC9 /* Pods-CashUTask-CashUTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashUTask-CashUTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-CashUTask-CashUTaskUITests/Pods-CashUTask-CashUTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		73A17AD0D635F578A572627A /* Pods-CashUTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashUTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-CashUTaskTests/Pods-CashUTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F9EFEBF546C1954352D9C6E /* Pods_CashUTask_CashUTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashUTask_CashUTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8816CF2253F792D00AA2685 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
+		A8816CF5253F7C2500AA2685 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		A8816CF7253F854100AA2685 /* ProductListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCellViewModel.swift; sourceTree = "<group>"; };
 		A8F06739253E1BCC00923C77 /* CashUTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashUTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F0673C253E1BCC00923C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8F0673E253E1BCC00923C77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8F06740253E1BCC00923C77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8F06740253E1BCC00923C77 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		A8F06743253E1BCC00923C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8F06745253E1BD000923C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8F06748253E1BD000923C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +66,13 @@
 		A8F0675A253E1BD000923C77 /* CashUTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashUTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F0675E253E1BD000923C77 /* CashUTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashUTaskUITests.swift; sourceTree = "<group>"; };
 		A8F06760253E1BD000923C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8F0676D253E237400923C77 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		A8F06771253E256D00923C77 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A8F06774253E28EA00923C77 /* ProductWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWebService.swift; sourceTree = "<group>"; };
+		B15FA42AE43BAF8A65AFC6CE /* Pods-CashUTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashUTaskTests.release.xcconfig"; path = "Target Support Files/Pods-CashUTaskTests/Pods-CashUTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		B68D9734C838F44E4227E012 /* Pods-CashUTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashUTask.release.xcconfig"; path = "Target Support Files/Pods-CashUTask/Pods-CashUTask.release.xcconfig"; sourceTree = "<group>"; };
+		DFB8D3A562676FB0245E439B /* Pods_CashUTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashUTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BC6BB29ECF7D2F4223AE6E /* Pods-CashUTask-CashUTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashUTask-CashUTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-CashUTask-CashUTaskUITests/Pods-CashUTask-CashUTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047700323F7C4FF1591F9663 /* Pods_CashUTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB601EB728F65E1A2583D38A /* Pods_CashUTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C43D9BD60160A34287C478 /* Pods_CashUTask_CashUTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BCEA25D9F56AEDE4432AFFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA1E86712F07F8751D7170 /* Pods-CashUTask.debug.xcconfig */,
+				B68D9734C838F44E4227E012 /* Pods-CashUTask.release.xcconfig */,
+				6F832C6A34B2B9D638524FC9 /* Pods-CashUTask-CashUTaskUITests.debug.xcconfig */,
+				F2BC6BB29ECF7D2F4223AE6E /* Pods-CashUTask-CashUTaskUITests.release.xcconfig */,
+				73A17AD0D635F578A572627A /* Pods-CashUTaskTests.debug.xcconfig */,
+				B15FA42AE43BAF8A65AFC6CE /* Pods-CashUTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A8816CF4253F7BFA00AA2685 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A8816CF5253F7C2500AA2685 /* ProductListViewModel.swift */,
+				A8816CF7253F854100AA2685 /* ProductListCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		A8F06730253E1BCC00923C77 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +132,8 @@
 				A8F06752253E1BD000923C77 /* CashUTaskTests */,
 				A8F0675D253E1BD000923C77 /* CashUTaskUITests */,
 				A8F0673A253E1BCC00923C77 /* Products */,
+				1BCEA25D9F56AEDE4432AFFF /* Pods */,
+				E6E9D4E6BBD9DCC762CCBC9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +150,13 @@
 		A8F0673B253E1BCC00923C77 /* CashUTask */ = {
 			isa = PBXGroup;
 			children = (
+				A8816CF4253F7BFA00AA2685 /* ViewModels */,
+				A8F06773253E28CB00923C77 /* Service */,
+				A8F06770253E255700923C77 /* Model */,
+				A8F0676F253E23CC00923C77 /* Controllers */,
+				A8F0676C253E21BC00923C77 /* Cells */,
 				A8F0673C253E1BCC00923C77 /* AppDelegate.swift */,
 				A8F0673E253E1BCC00923C77 /* SceneDelegate.swift */,
-				A8F06740253E1BCC00923C77 /* ViewController.swift */,
 				A8F06742253E1BCC00923C77 /* Main.storyboard */,
 				A8F06745253E1BD000923C77 /* Assets.xcassets */,
 				A8F06747253E1BD000923C77 /* LaunchScreen.storyboard */,
@@ -128,6 +183,49 @@
 			path = CashUTaskUITests;
 			sourceTree = "<group>";
 		};
+		A8F0676C253E21BC00923C77 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0676D253E237400923C77 /* ProductListTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A8F0676F253E23CC00923C77 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8F06740253E1BCC00923C77 /* ProductsListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A8F06770253E255700923C77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8F06771253E256D00923C77 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8F06773253E28CB00923C77 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A8F06774253E28EA00923C77 /* ProductWebService.swift */,
+				A8816CF2253F792D00AA2685 /* ServiceConstants.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E6E9D4E6BBD9DCC762CCBC9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2019697E5ED281E06999A4A6 /* Pods_CashUTask.framework */,
+				8F9EFEBF546C1954352D9C6E /* Pods_CashUTask_CashUTaskUITests.framework */,
+				DFB8D3A562676FB0245E439B /* Pods_CashUTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8F06763253E1BD000923C77 /* Build configuration list for PBXNativeTarget "CashUTask" */;
 			buildPhases = (
+				601363D327700AB9CFEF2F0E /* [CP] Check Pods Manifest.lock */,
 				A8F06735253E1BCC00923C77 /* Sources */,
 				A8F06736253E1BCC00923C77 /* Frameworks */,
 				A8F06737253E1BCC00923C77 /* Resources */,
+				6381272ADFC5573E4DF95F47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8F06766253E1BD000923C77 /* Build configuration list for PBXNativeTarget "CashUTaskTests" */;
 			buildPhases = (
+				BAF6EB71116139FBF55369F6 /* [CP] Check Pods Manifest.lock */,
 				A8F0674B253E1BD000923C77 /* Sources */,
 				A8F0674C253E1BD000923C77 /* Frameworks */,
 				A8F0674D253E1BD000923C77 /* Resources */,
@@ -170,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8F06769253E1BD000923C77 /* Build configuration list for PBXNativeTarget "CashUTaskUITests" */;
 			buildPhases = (
+				C538FD67CBA6D0F56C83E4F6 /* [CP] Check Pods Manifest.lock */,
 				A8F06756253E1BD000923C77 /* Sources */,
 				A8F06757253E1BD000923C77 /* Frameworks */,
 				A8F06758253E1BD000923C77 /* Resources */,
+				887EEFC3FC1DB30029D0E0CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +357,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		601363D327700AB9CFEF2F0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CashUTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6381272ADFC5573E4DF95F47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CashUTask/Pods-CashUTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CashUTask/Pods-CashUTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CashUTask/Pods-CashUTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		887EEFC3FC1DB30029D0E0CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CashUTask-CashUTaskUITests/Pods-CashUTask-CashUTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CashUTask-CashUTaskUITests/Pods-CashUTask-CashUTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CashUTask-CashUTaskUITests/Pods-CashUTask-CashUTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAF6EB71116139FBF55369F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CashUTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C538FD67CBA6D0F56C83E4F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CashUTask-CashUTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A8F06735253E1BCC00923C77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8F06741253E1BCC00923C77 /* ViewController.swift in Sources */,
+				A8F06775253E28EA00923C77 /* ProductWebService.swift in Sources */,
+				A8816CF8253F854100AA2685 /* ProductListCellViewModel.swift in Sources */,
+				A8F06741253E1BCC00923C77 /* ProductsListViewController.swift in Sources */,
+				A8816CF6253F7C2500AA2685 /* ProductListViewModel.swift in Sources */,
+				A8F0676E253E237400923C77 /* ProductListTableViewCell.swift in Sources */,
+				A8F06772253E256D00923C77 /* Product.swift in Sources */,
 				A8F0673D253E1BCC00923C77 /* AppDelegate.swift in Sources */,
 				A8F0673F253E1BCC00923C77 /* SceneDelegate.swift in Sources */,
+				A8816CF3253F792D00AA2685 /* ServiceConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +644,7 @@
 		};
 		A8F06764253E1BD000923C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ADA1E86712F07F8751D7170 /* Pods-CashUTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +662,7 @@
 		};
 		A8F06765253E1BD000923C77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B68D9734C838F44E4227E012 /* Pods-CashUTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +680,7 @@
 		};
 		A8F06767253E1BD000923C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73A17AD0D635F578A572627A /* Pods-CashUTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +702,7 @@
 		};
 		A8F06768253E1BD000923C77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15FA42AE43BAF8A65AFC6CE /* Pods-CashUTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +724,7 @@
 		};
 		A8F0676A253E1BD000923C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F832C6A34B2B9D638524FC9 /* Pods-CashUTask-CashUTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +744,7 @@
 		};
 		A8F0676B253E1BD000923C77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2BC6BB29ECF7D2F4223AE6E /* Pods-CashUTask-CashUTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
