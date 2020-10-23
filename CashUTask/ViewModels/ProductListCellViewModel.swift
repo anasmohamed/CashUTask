@@ -8,6 +8,8 @@
 
 import Foundation
 struct ProductListCellViewModel {
-    let titleText: String
+    let productNameEn: String
+    let productNameAr:String
     let imageUrl: String
+    
 }

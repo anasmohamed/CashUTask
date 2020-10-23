@@ -9,13 +9,18 @@
 import Foundation
 import SwiftyJSON
 struct Product {
-    var prductName : String
-    var productImage: String
+    var productNameEn : String
+    var productImage: String = ""
+    var productNameAr : String
      init?(json: JSON) {
-        prductName = json["name_en"].stringValue
-        productImage = json["link"].stringValue
-           
-           
+        productNameEn = json["name_en"].stringValue
+        productNameAr = json["name_ar"].stringValue
+        if let linksList = json["Links"].array {
+            for imageLink in linksList {
+                productImage = imageLink["link"].stringValue
+            }
+        }
+
           
        }
 }
