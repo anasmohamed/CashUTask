@@ -12,14 +12,21 @@ struct Product {
     var productNameEn : String
     var productImage: String = ""
     var productNameAr : String
+    
      init?(json: JSON) {
         productNameEn = json["name_en"].stringValue
         productNameAr = json["name_ar"].stringValue
+        
         if let linksList = json["Links"].array {
             for imageLink in linksList {
                 productImage = imageLink["link"].stringValue
             }
+            if linksList.count == 0
+            {
+                productImage = json["Category"]["Link"]["link"].stringValue
+            }
         }
+        
 
           
        }

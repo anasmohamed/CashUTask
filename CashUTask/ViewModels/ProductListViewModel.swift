@@ -69,8 +69,6 @@ class ProductListViewModel {
     }
     
     func createCellViewModel( product: Product ) -> ProductListCellViewModel {
-        
-        
         return ProductListCellViewModel( productNameEn: product.productNameEn,productNameAr: product.productNameAr,imageUrl: product.productImage)
     }
     

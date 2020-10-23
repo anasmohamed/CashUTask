@@ -11,10 +11,13 @@ import SDWebImage
 class ProductsListTableViewCell: UITableViewCell {
   
     @IBOutlet weak var productImageView: UIImageView!
-    @IBOutlet weak var productNameLbl: UILabel!
+    @IBOutlet weak var productNameEnLbl: UILabel!
+
     var productListCellViewModel : ProductListCellViewModel? {
           didSet {
-              productNameLbl.text = productListCellViewModel?.titleText
+            productNameEnLbl.text = productListCellViewModel?.productNameEn
+            productImageView.layer.cornerRadius = 8.0
+            productImageView.layer.masksToBounds = true
               productImageView?.sd_setImage(with: URL( string: productListCellViewModel?.imageUrl ?? "" ), completed: nil)
           }
       }
