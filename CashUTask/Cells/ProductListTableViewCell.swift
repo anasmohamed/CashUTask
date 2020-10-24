@@ -19,6 +19,13 @@ class ProductsListTableViewCell: UITableViewCell {
             productImageView.layer.cornerRadius = 8.0
             productImageView.layer.masksToBounds = true
               productImageView?.sd_setImage(with: URL( string: productListCellViewModel?.imageUrl ?? "" ), completed: nil)
+            SDWebImageManager.shared.d(with: NSURL(string: "...") as URL?, options: .continueInBackground, progress: {
+            (receivedSize :Int, ExpectedSize :Int) in
+
+            }, completed: {
+            (image : UIImage?, error : Error?, cacheType : SDImageCacheType, finished : Bool, url : URL?) in
+
+            })
           }
       }
 

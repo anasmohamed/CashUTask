@@ -17,9 +17,11 @@ protocol ProductAPIServiceProtocol {
 }
 
 class ProductAPIService :ProductAPIServiceProtocol{
-    
+  
     
     func fetchProducts(complete: @escaping (Bool, [Product]?, AFError?) -> ()) {
+        
+        
         AF.request(ServiceConstants.baseURL).responseJSON { response in
             debugPrint(response)
             
@@ -61,8 +63,8 @@ class ProductAPIService :ProductAPIServiceProtocol{
                 
                 for product in products
                 {
-                    let productData = Product()
-                    productData.parseProductJsonObject(json: product)
+                    let productData = Product(json: product)
+//                    productData.parseProductJsonObject(json: product)
                     productsList.append(productData)
                     
                 }

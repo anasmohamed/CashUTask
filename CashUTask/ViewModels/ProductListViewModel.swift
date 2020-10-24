@@ -16,7 +16,7 @@ public enum ProductTableState {
 class ProductListViewModel {
     let apiService: ProductAPIServiceProtocol
     private var products: [Product] = [Product]()
-    
+    private var productDataStore = ProductDataStore()
     private var cellViewModels: [ProductListCellViewModel] = [ProductListCellViewModel]() {
         didSet {
             self.reloadTableViewClosure?()
@@ -48,20 +48,28 @@ class ProductListViewModel {
     }
     func initFetch() {
         state = .loading
-        apiService.fetchProducts{ [weak self] (success, products, error) in
-            guard let self = self else {
-                return
+        if Reachability.isConnectedToNetwork(){
+            apiService.fetchProducts{ [weak self] (success, products, error) in
+                guard let self = self else {
+                    return
+                }
+                
+                guard error == nil else {
+                    self.state = .error
+                    // self.alertMessage = error?.errorDescription
+                    return
+                }
+                
+                self.processFetchedProductAndSaveProductLocal(products: products!)
+                self.state = .populated
             }
             
-            guard error == nil else {
-                self.state = .error
-                // self.alertMessage = error?.errorDescription
-                return
-            }
             
-            self.processFetchedPhoto(products: products!)
-            self.state = .populated
+            
+        }else{
+            self.fetchProductsFromCoreData()
         }
+        
     }
     
     func getCellViewModel( at indexPath: IndexPath ) -> ProductListCellViewModel {
@@ -69,11 +77,24 @@ class ProductListViewModel {
     }
     
     func createCellViewModel( product: Product ) -> ProductListCellViewModel {
-        return ProductListCellViewModel( productNameEn: product.productNameEn,productNameAr: product.productNameAr,imageUrl: product.productImage)
+        return ProductListCellViewModel(productNameEn: product.productNameEn,imageUrl: product.productImage)
     }
     
-    private func processFetchedPhoto( products: [Product] ) {
-        self.products = products // Cache
+    private func processFetchedProductAndSaveProductLocal( products: [Product] ) {
+        self.products = products
+        var vms = [ProductListCellViewModel]()
+        for product in products {
+            vms.append(createCellViewModel(product: product))
+        }
+        productDataStore.saveProductIntoCoreData(products: products)
+        self.cellViewModels = vms
+    }
+//
+    func saveProductIntoCoreData(products:[Product])  {
+        self.productDataStore.saveProductIntoCoreData(products: products)
+    }
+    func fetchProductsFromCoreData() {
+        products =  productDataStore.fetchProductsFromCoreData()
         var vms = [ProductListCellViewModel]()
         for product in products {
             vms.append(createCellViewModel(product: product))

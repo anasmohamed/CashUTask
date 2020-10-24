@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		047700323F7C4FF1591F9663 /* Pods_CashUTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2019697E5ED281E06999A4A6 /* Pods_CashUTask.framework */; };
 		70C43D9BD60160A34287C478 /* Pods_CashUTask_CashUTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9EFEBF546C1954352D9C6E /* Pods_CashUTask_CashUTaskUITests.framework */; };
+		A8587F9625446D0D0013D111 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8587F9525446D0D0013D111 /* CoreDataStorage.swift */; };
+		A8587F99254490E10013D111 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8587F98254490E10013D111 /* Reachability.swift */; };
+		A8587F9D2544A2C20013D111 /* ProductDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8587F9C2544A2C20013D111 /* ProductDataStore.swift */; };
+		A8587FA42544C7FC0013D111 /* CashUTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8587FA22544C7FC0013D111 /* CashUTask.xcdatamodeld */; };
 		A8816CF3253F792D00AA2685 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8816CF2253F792D00AA2685 /* ServiceConstants.swift */; };
 		A8816CF6253F7C2500AA2685 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8816CF5253F7C2500AA2685 /* ProductListViewModel.swift */; };
 		A8816CF8253F854100AA2685 /* ProductListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8816CF7253F854100AA2685 /* ProductListCellViewModel.swift */; };
-		A8C7F9492544450100734171 /* CashUTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8C7F9472544450100734171 /* CashUTask.xcdatamodeld */; };
 		A8F0673D253E1BCC00923C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0673C253E1BCC00923C77 /* AppDelegate.swift */; };
 		A8F0673F253E1BCC00923C77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0673E253E1BCC00923C77 /* SceneDelegate.swift */; };
 		A8F06741253E1BCC00923C77 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F06740253E1BCC00923C77 /* ProductsListViewController.swift */; };
@@ -50,10 +53,13 @@
 		6F832C6A34B2B9D638524FC9 /* Pods-CashUTask-CashUTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashUTask-CashUTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-CashUTask-CashUTaskUITests/Pods-CashUTask-CashUTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		73A17AD0D635F578A572627A /* Pods-CashUTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashUTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-CashUTaskTests/Pods-CashUTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F9EFEBF546C1954352D9C6E /* Pods_CashUTask_CashUTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashUTask_CashUTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8587F9525446D0D0013D111 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		A8587F98254490E10013D111 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A8587F9C2544A2C20013D111 /* ProductDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataStore.swift; sourceTree = "<group>"; };
+		A8587FA32544C7FC0013D111 /* CashUTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CashUTask.xcdatamodel; sourceTree = "<group>"; };
 		A8816CF2253F792D00AA2685 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
 		A8816CF5253F7C2500AA2685 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 		A8816CF7253F854100AA2685 /* ProductListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCellViewModel.swift; sourceTree = "<group>"; };
-		A8C7F9482544450100734171 /* Product.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Product.xcdatamodel; sourceTree = "<group>"; };
 		A8F06739253E1BCC00923C77 /* CashUTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashUTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F0673C253E1BCC00923C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8F0673E253E1BCC00923C77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,8 +127,26 @@
 		A8587F9325446C980013D111 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A8587F97254490C30013D111 /* Reachability */,
+				A8587F9425446CE70013D111 /* Persistence */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A8587F9425446CE70013D111 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				A8587F9525446D0D0013D111 /* CoreDataStorage.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		A8587F97254490C30013D111 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A8587F98254490E10013D111 /* Reachability.swift */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		A8816CF4253F7BFA00AA2685 /* ViewModels */ = {
@@ -137,7 +161,6 @@
 		A8F06730253E1BCC00923C77 = {
 			isa = PBXGroup;
 			children = (
-				A8C7F9472544450100734171 /* CashUTask.xcdatamodeld */,
 				A8F0673B253E1BCC00923C77 /* CashUTask */,
 				A8F06752253E1BD000923C77 /* CashUTaskTests */,
 				A8F0675D253E1BD000923C77 /* CashUTaskUITests */,
@@ -172,6 +195,7 @@
 				A8F06745253E1BD000923C77 /* Assets.xcassets */,
 				A8F06747253E1BD000923C77 /* LaunchScreen.storyboard */,
 				A8F0674A253E1BD000923C77 /* Info.plist */,
+				A8587FA22544C7FC0013D111 /* CashUTask.xcdatamodeld */,
 			);
 			path = CashUTask;
 			sourceTree = "<group>";
@@ -214,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				A8F06771253E256D00923C77 /* Product.swift */,
+				A8587F9C2544A2C20013D111 /* ProductDataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -477,15 +502,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8F06775253E28EA00923C77 /* ProductWebService.swift in Sources */,
-				A8C7F9492544450100734171 /* CashUTask.xcdatamodeld in Sources */,
+				A8587F99254490E10013D111 /* Reachability.swift in Sources */,
 				A8816CF8253F854100AA2685 /* ProductListCellViewModel.swift in Sources */,
 				A8F06741253E1BCC00923C77 /* ProductsListViewController.swift in Sources */,
 				A8816CF6253F7C2500AA2685 /* ProductListViewModel.swift in Sources */,
+				A8587F9D2544A2C20013D111 /* ProductDataStore.swift in Sources */,
 				A8F0676E253E237400923C77 /* ProductListTableViewCell.swift in Sources */,
 				A8F06772253E256D00923C77 /* Product.swift in Sources */,
+				A8587F9625446D0D0013D111 /* CoreDataStorage.swift in Sources */,
 				A8F0673D253E1BCC00923C77 /* AppDelegate.swift in Sources */,
 				A8F0673F253E1BCC00923C77 /* SceneDelegate.swift in Sources */,
 				A8816CF3253F792D00AA2685 /* ServiceConstants.swift in Sources */,
+				A8587FA42544C7FC0013D111 /* CashUTask.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,12 +844,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A8C7F9472544450100734171 /* CashUTask.xcdatamodeld */ = {
+		A8587FA22544C7FC0013D111 /* CashUTask.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A8C7F9482544450100734171 /* Product.xcdatamodel */,
+				A8587FA32544C7FC0013D111 /* CashUTask.xcdatamodel */,
 			);
-			currentVersion = A8C7F9482544450100734171 /* Product.xcdatamodel */;
+			currentVersion = A8587FA32544C7FC0013D111 /* CashUTask.xcdatamodel */;
 			path = CashUTask.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

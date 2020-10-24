@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="ProductEntity" representedClassName="ProductEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="productImage" optional="YES" attributeType="Binary"/>
-        <attribute name="productNameAr" optional="YES" attributeType="String"/>
+        <attribute name="productImage" optional="YES" attributeType="String"/>
         <attribute name="productNameEn" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="ProductEntity" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="ProductEntity" positionX="-27" positionY="18" width="128" height="73"/>
     </elements>
 </model>
