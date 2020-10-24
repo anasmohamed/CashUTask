@@ -9,7 +9,7 @@
 import Foundation
 struct ProductListCellViewModel {
     let productNameEn: String
-//    let productNameAr:String
     let imageUrl: String
+    let savedImage : NSData
     
 }

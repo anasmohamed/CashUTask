@@ -77,7 +77,7 @@ class ProductListViewModel {
     }
     
     func createCellViewModel( product: Product ) -> ProductListCellViewModel {
-        return ProductListCellViewModel(productNameEn: product.productNameEn,imageUrl: product.productImage)
+        return ProductListCellViewModel(productNameEn: product.productNameEn,imageUrl: product.productImage,savedImage: product.savedImage)
     }
     
     private func processFetchedProductAndSaveProductLocal( products: [Product] ) {
