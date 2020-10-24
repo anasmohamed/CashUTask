@@ -61,8 +61,9 @@ class ProductAPIService :ProductAPIServiceProtocol{
                 
                 for product in products
                 {
-                    let productData = Product(json: product)
-                    productsList.append(productData!)
+                    let productData = Product()
+                    productData.parseProductJsonObject(json: product)
+                    productsList.append(productData)
                     
                 }
                 complete(true,productsList,nil)

@@ -9,7 +9,6 @@ target 'CashUTask' do
   pod 'Alamofire', '~> 5.2'
   pod 'SDWebImage', '~> 5.0'
   pod 'SwiftyJSON', '~> 4.0'
-
   target 'CashUTaskTests' do
     inherit! :search_paths
     # Pods for testing

@@ -12,6 +12,7 @@
 		A8816CF3253F792D00AA2685 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8816CF2253F792D00AA2685 /* ServiceConstants.swift */; };
 		A8816CF6253F7C2500AA2685 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8816CF5253F7C2500AA2685 /* ProductListViewModel.swift */; };
 		A8816CF8253F854100AA2685 /* ProductListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8816CF7253F854100AA2685 /* ProductListCellViewModel.swift */; };
+		A8C7F9492544450100734171 /* CashUTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8C7F9472544450100734171 /* CashUTask.xcdatamodeld */; };
 		A8F0673D253E1BCC00923C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0673C253E1BCC00923C77 /* AppDelegate.swift */; };
 		A8F0673F253E1BCC00923C77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0673E253E1BCC00923C77 /* SceneDelegate.swift */; };
 		A8F06741253E1BCC00923C77 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F06740253E1BCC00923C77 /* ProductsListViewController.swift */; };
@@ -52,6 +53,7 @@
 		A8816CF2253F792D00AA2685 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
 		A8816CF5253F7C2500AA2685 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 		A8816CF7253F854100AA2685 /* ProductListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCellViewModel.swift; sourceTree = "<group>"; };
+		A8C7F9482544450100734171 /* Product.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Product.xcdatamodel; sourceTree = "<group>"; };
 		A8F06739253E1BCC00923C77 /* CashUTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashUTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F0673C253E1BCC00923C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8F0673E253E1BCC00923C77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A8587F9325446C980013D111 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		A8816CF4253F7BFA00AA2685 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +137,7 @@
 		A8F06730253E1BCC00923C77 = {
 			isa = PBXGroup;
 			children = (
+				A8C7F9472544450100734171 /* CashUTask.xcdatamodeld */,
 				A8F0673B253E1BCC00923C77 /* CashUTask */,
 				A8F06752253E1BD000923C77 /* CashUTaskTests */,
 				A8F0675D253E1BD000923C77 /* CashUTaskUITests */,
@@ -150,6 +160,7 @@
 		A8F0673B253E1BCC00923C77 /* CashUTask */ = {
 			isa = PBXGroup;
 			children = (
+				A8587F9325446C980013D111 /* Utilities */,
 				A8816CF4253F7BFA00AA2685 /* ViewModels */,
 				A8F06773253E28CB00923C77 /* Service */,
 				A8F06770253E255700923C77 /* Model */,
@@ -466,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8F06775253E28EA00923C77 /* ProductWebService.swift in Sources */,
+				A8C7F9492544450100734171 /* CashUTask.xcdatamodeld in Sources */,
 				A8816CF8253F854100AA2685 /* ProductListCellViewModel.swift in Sources */,
 				A8F06741253E1BCC00923C77 /* ProductsListViewController.swift in Sources */,
 				A8816CF6253F7C2500AA2685 /* ProductListViewModel.swift in Sources */,
@@ -802,6 +814,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A8C7F9472544450100734171 /* CashUTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8C7F9482544450100734171 /* Product.xcdatamodel */,
+			);
+			currentVersion = A8C7F9482544450100734171 /* Product.xcdatamodel */;
+			path = CashUTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A8F06731253E1BCC00923C77 /* Project object */;
 }
