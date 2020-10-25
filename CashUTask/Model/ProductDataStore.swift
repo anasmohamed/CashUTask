@@ -29,11 +29,7 @@ public class ProductDataStore{
                 (downloadedImage, downloadException, cacheType, downloadURL) in
                // create NSData from UIImage
                 
-                guard let imageData = downloadedImage!.jpegData(compressionQuality: 1) else {
-                              // handle failed conversion
-                              print("jpg error")
-                              return
-                          }
+                let imageData = downloadedImage!.jpegData(compressionQuality: 1)
                 productEntity.setValue(imageData, forKeyPath: "productImage")
                 productEntity.setValue(product.productNameEn, forKeyPath: "productNameEn")
 

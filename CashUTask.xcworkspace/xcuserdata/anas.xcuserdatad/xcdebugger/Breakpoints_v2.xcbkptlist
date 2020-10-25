@@ -71,22 +71,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2BBDAD7B-CA3A-49FA-A792-8A93F5A2835F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CashUTask/Model/ProductDataStore.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "saveProductIntoCoreData(products:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "3B53842A-2C8A-4B40-AA11-CF9199AA7A07"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -94,8 +78,8 @@
             filePath = "CashUTask/Model/ProductDataStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "fetchProductsFromCoreData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,10 +94,42 @@
             filePath = "CashUTask/Model/ProductDataStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "fetchProductsFromCoreData()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "543F6351-F43A-4362-9C21-E2DC6A47B406 - 8a8e632b0d92de33"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CashUTask.ProductDataStore.fetchProductsFromCoreData() -&gt; Swift.Array&lt;CashUTask.Product&gt;"
+                  moduleName = "CashUTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anas/Desktop/CashUTask/CashUTask/Model/ProductDataStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "853">
+               </Location>
+               <Location
+                  uuid = "543F6351-F43A-4362-9C21-E2DC6A47B406 - 8a8e632b0d92de33"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CashUTask.ProductDataStore.fetchProductsFromCoreData() -&gt; Swift.Array&lt;CashUTask.Product&gt;"
+                  moduleName = "CashUTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anas/Desktop/CashUTask/CashUTask/Model/ProductDataStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "3488">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -126,8 +142,8 @@
             filePath = "CashUTask/Model/ProductDataStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "fetchProductsFromCoreData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,25 +158,9 @@
             filePath = "CashUTask/Model/ProductDataStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "fetchProductsFromCoreData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F1BBF8AF-9367-4577-99EF-F5BC45EDA886"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CashUTask/Model/ProductDataStore.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "saveProductIntoCoreData(products:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

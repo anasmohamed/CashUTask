@@ -13,6 +13,7 @@ class ProductsListViewController: UIViewController {
     @IBOutlet weak var productActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var productListTableView: UITableView!
     
+    @IBOutlet weak var noDataLbl: UILabel!
     
     lazy var productListViewModel: ProductListViewModel = {
         return ProductListViewModel()
@@ -26,6 +27,7 @@ class ProductsListViewController: UIViewController {
         initVM()
     }
     func initView() {
+        noDataLbl.alpha = 0.0
         self.navigationItem.title = "Popular"
         
         productListTableView.estimatedRowHeight = 150
@@ -57,11 +59,13 @@ class ProductsListViewController: UIViewController {
                     self.productActivityIndicator.stopAnimating()
                     UIView.animate(withDuration: 0.2, animations: {
                         self.productListTableView.alpha = 0.0
+                        self.noDataLbl.alpha = 1.0
                     })
                 case .loading:
                     self.productActivityIndicator.startAnimating()
                     UIView.animate(withDuration: 0.2, animations: {
                         self.productListTableView.alpha = 0.0
+
                     })
                 case .populated:
                     self.productActivityIndicator.stopAnimating()
